@@ -1,6 +1,6 @@
 {
   "name": "@ycmfe/vue-cli-plugin-cactus-eslint",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "cactus eslint plugin",
   "keywords": [
     "vue",
