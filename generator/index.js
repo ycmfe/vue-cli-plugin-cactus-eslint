@@ -41,10 +41,6 @@ module.exports = (api, { config, lintOn = [] }, _, invoking) => {
       'lint-staged': '^9.5.0',
     })
 
-    Object.assign(pkg.peerDependencies, {
-      husky: '^3.0.9',
-    })
-
     pkg.husky = {
       hooks: {
         'pre-commit': 'lint-staged',
