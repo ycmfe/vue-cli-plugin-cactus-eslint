@@ -40,8 +40,15 @@ module.exports = (api, { config, lintOn = [] }, _, invoking) => {
     Object.assign(pkg.devDependencies, {
       'lint-staged': '^9.5.0',
     })
-    pkg.gitHooks = {
-      'pre-commit': 'lint-staged',
+
+    Object.assign(pkg.peerDependencies, {
+      husky: '^3.0.9',
+    })
+
+    pkg.husky = {
+      hooks: {
+        'pre-commit': 'lint-staged',
+      },
     }
     const extentions = require('../eslintOptions')
       .extensions(api)
