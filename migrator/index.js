@@ -69,9 +69,5 @@ module.exports = async (api) => {
         },
       })
     }
-
-    // TODO:
-    // transform `@vue/prettier` to `eslint:recommended` + `@vue/prettier`
-    // transform `@vue/typescript` to `@vue/typescript/recommended` and also fix prettier compatibility for it
   }
 }

@@ -9,10 +9,11 @@ exports.config = (api, preset) => {
     rules: {
       'no-console': makeJSOnlyValue(`process.env.NODE_ENV === 'production' ? 'warn' : 'off'`),
       'no-debugger': makeJSOnlyValue(`process.env.NODE_ENV === 'production' ? 'warn' : 'off'`),
+      '@typescript-eslint/member-delimiter-style': 'off',
       'vue/component-tags-order': [
         'error',
         {
-          order: [['script', 'template'], 'style'],
+          order: ['template', 'script', 'style'],
         },
       ],
     },
